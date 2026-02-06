@@ -88,5 +88,6 @@ if st.button("Predict Churn"):
     else:
         st.error("🔴 High Churn Risk")
 
-    st.progress(probability)
+    st.progress(int(probability * 100))
+
 
