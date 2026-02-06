@@ -18,11 +18,6 @@ features_path = os.path.join(ROOT_DIR, "model", "feature_columns.pkl")
 model = joblib.load(model_path)
 feature_columns = joblib.load(features_path)
 
-
-st.title("📉 Customer Churn Prediction System")
-
-st.markdown("Enter customer details below to predict churn risk.")
-
 # --- INPUTS ---
 st.set_page_config(page_title="Churn Prediction System", layout="wide")
 
